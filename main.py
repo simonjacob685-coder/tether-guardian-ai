@@ -38,3 +38,15 @@ trust = input("Recipient trust level (low/medium/high): ")
 result = analyze_transaction(amount, balance, trust)
 
 print("\nResult:", result)
+print("\n--- TRANSACTION SIMULATION ---")
+
+amount = float(input("Enter amount to send: "))
+balance = float(input("Enter wallet balance: "))
+trust = input("Recipient trust level (low/medium/high): ")
+
+result = analyze_transaction(amount, balance, trust)
+
+print("\n🔐 FINAL DECISION:")
+print(result)
+
+print("\n💡 Tether Guardian AI helped protect your funds in real-time.")
