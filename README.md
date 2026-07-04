@@ -1,67 +1,80 @@
 # 🛡️ Tether Guardian AI
 
+An AI-powered digital security assistant that helps users identify scams, phishing attempts, malicious links, and social engineering attacks before they become victims.
+
+Built for the Tether AI Hackathon.
+
+---
+
 ## 🚀 Overview
-Tether Guardian AI is a smart financial safety assistant that analyzes crypto transactions in real time and helps users avoid risky or suspicious transfers.
 
-It simulates AI-powered decision-making to improve safety in digital payments and Web3 finance.
+Tether Guardian AI is designed to make digital security simple and accessible for everyone.
 
----
+The assistant analyzes suspicious messages, URLs, emails, and online conversations, then explains potential threats in plain language while providing practical safety recommendations.
 
-## 💡 Problem
-Crypto users often send funds without understanding risks such as:
-- Sending too much balance
-- Unknown recipients
-- Unsafe transactions
+Our goal is to help users stay safe online using AI.
 
 ---
 
-## 🧠 Solution
-Tether Guardian AI analyzes:
-- Transaction amount
-- Wallet balance
-- Recipient trust level
+## ✨ Features
 
-And returns:
-- ✅ Safe
-- ⚠️ Warning
-- 🚨 Blocked
-
----
-
-## ⚙️ Features
-- AI-style risk scoring system
-- Real-time transaction analysis
-- Simple user-friendly interface
-- Lightweight Python prototype
+- 🔍 Detect phishing messages
+- 🌐 Analyze suspicious URLs
+- 📧 Review email content for scams
+- 💬 Identify social engineering attempts
+- ⚠️ Explain security risks in simple language
+- 🤖 AI-powered safety recommendations
+- 📱 Mobile-friendly design
 
 ---
 
-## 🧪 How it works
-1. User enters transaction details
-2. AI calculates risk score
-3. System gives final decision
+## 🛠️ Technology Stack
 
----
-
-## 📌 Tech Stack
 - Python
-- Randomized AI simulation logic
-- CLI interface
+- Artificial Intelligence
+- GitHub Codespaces
+- GitHub
+- Tether Developer Resources
 
 ---
 
-## 🎥 Demo
-A 3-minute demo shows:
-- Transaction input
-- AI analysis
-- Final decision output
+## 🎯 Problem
+
+Millions of people lose money every year because they cannot easily recognize phishing attacks, fake investment schemes, wallet scams, and malicious links.
+
+Many existing security tools are too technical for everyday users.
 
 ---
 
-## 🏆 Hackathon Impact
-This project improves crypto safety and helps users make better financial decisions in Web3 environments.
+## 💡 Solution
+
+Tether Guardian AI provides an intelligent assistant that analyzes suspicious content and delivers clear, human-friendly explanations instead of confusing technical warnings.
+
+The platform helps users make safer decisions before clicking dangerous links or sharing sensitive information.
+
+---
+
+## 🌍 Future Improvements
+
+- Browser extension
+- Telegram integration
+- WhatsApp message analysis
+- QR code scanner
+- Voice assistant support
+- Multi-language support
+- Real-time threat intelligence
+
+---
+
+## 👨‍💻 Developer
+
+Simon Jacob
+
+GitHub:
+https://github.com/simonjacob685-coder
 
 ---
 
 ## 📄 License
+
 MIT License
