@@ -79,3 +79,9 @@ def analyze_transaction(amount, balance, trust_level):
     print("\n💡 Tether Guardian AI improves financial safety by explaining risk before users send funds.")
 
     return decision
+if __name__ == "__main__":
+        analyze_transaction(
+                amount=500,
+                        balance=1000,
+                                trust_level="medium"
+                                    )
