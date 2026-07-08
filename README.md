@@ -1,80 +1,87 @@
-# 🛡️ Tether Guardian AI
+# 🛡️⚽ Tether FanShield AI
 
-An AI-powered digital security assistant that helps users identify scams, phishing attempts, malicious links, and social engineering attacks before they become victims.
+**AI-powered wallet safety assistant for football tournament fans.**
 
-Built for the Tether AI Hackathon.
-
----
-
-## 🚀 Overview
-
-Tether Guardian AI is designed to make digital security simple and accessible for everyone.
-
-The assistant analyzes suspicious messages, URLs, emails, and online conversations, then explains potential threats in plain language while providing practical safety recommendations.
-
-Our goal is to help users stay safe online using AI.
-
----
-
-## ✨ Features
-
-- 🔍 Detect phishing messages
-- 🌐 Analyze suspicious URLs
-- 📧 Review email content for scams
-- 💬 Identify social engineering attempts
-- ⚠️ Explain security risks in simple language
-- 🤖 AI-powered safety recommendations
-- 📱 Mobile-friendly design
-
----
-
-## 🛠️ Technology Stack
-
-- Python
-- Artificial Intelligence
-- GitHub Codespaces
-- GitHub
-- Tether Developer Resources
+Built for the **Tether Developers Cup 2026** — WDK (Wallets) track.
 
 ---
 
 ## 🎯 Problem
 
-Millions of people lose money every year because they cannot easily recognize phishing attacks, fake investment schemes, wallet scams, and malicious links.
+During major football tournaments, scammers flood fans with fake ticket
+refunds, fake prize claims, and fake "official" merchandise deals — all
+designed to trick people into sending USDT to a scammer's wallet.
 
-Many existing security tools are too technical for everyday users.
+Most fans have no easy way to check if a message or wallet address is
+safe before sending money. Existing security tools are too technical
+for everyday users who just want to know: *"Is this safe to send to?"*
 
 ---
 
 ## 💡 Solution
 
-Tether Guardian AI provides an intelligent assistant that analyzes suspicious content and delivers clear, human-friendly explanations instead of confusing technical warnings.
+**Tether FanShield AI** checks a message and/or wallet address **before**
+a user sends any USDT, and gives a clear, plain-language risk verdict:
 
-The platform helps users make safer decisions before clicking dangerous links or sharing sensitive information.
+- ✅ **Low Risk** — no known scam patterns detected
+- ⚠️ **Suspicious** — some warning signs found, verify before sending
+- 🚨 **High Risk** — strongly matches known tournament scam patterns
 
----
-
-## 🌍 Future Improvements
-
-- Browser extension
-- Telegram integration
-- WhatsApp message analysis
-- QR code scanner
-- Voice assistant support
-- Multi-language support
-- Real-time threat intelligence
+Built using the **Tether Wallet Development Kit (WDK)** for real,
+self-custodial wallet generation and balance checks — the user always
+stays in control of their own funds and decisions.
 
 ---
 
+## ✨ Features
+
+- 🔍 Scans messages for known tournament-scam phrases (fake ticket
+  refunds, fake prize claims, urgency tactics, fake giveaways)
+- 🏦 Checks wallet address formatting for basic red flags
+- 👛 Real self-custodial wallet generation and balance checks via WDK
+- 🗣️ Plain-language explanations with clear reasons for every verdict
+- 📱 Built entirely on a mobile phone via GitHub Codespaces
+- ⚡ Fast, local, no external API calls required for scam detection
+
+---
+
+## 🛠️ Technology Stack
+
+- Python 3 (scam detection engine)
+- Node.js + Tether WDK (`@tetherto/wdk`, `@tetherto/wdk-wallet-evm`)
+- Regex-based pattern analysis engine
+- GitHub Codespaces (mobile-built development, zero laptop used)
+
+---
+
+## 🚀 How It Works
+
+**Scam Detection (`main.py`):**
+1. User pastes a suspicious message (e.g. *"Send 50 USDT to claim your
+   free VIP match ticket now!"*)
+2. User optionally pastes the wallet address they were asked to send to
+3. The tool scans for known scam phrase patterns, urgency language, and
+   suspicious domain patterns
+4. A clear risk verdict is shown with explainable reasons, so the user
+   can decide safely — no funds are ever moved by the tool itself
+
+**Wallet Safety (`wallet_check.js`):**
+1. Generates a real self-custodial wallet using Tether's WDK
+2. Retrieves the wallet address and checks its balance
+3. Demonstrates genuine self-custody — the user holds their own keys,
+   not Tether, not FanShield, not any exchange
+
+---
+
+## ▶️ Running the Project
+
+**Scam checker:**
+```bash
+python3 main.py
 ## 👨‍💻 Developer
 
-Simon Jacob
-
-GitHub:
-https://github.com/simonjacob685-coder
-
----
-
+**Simon Yakubu**
+GitHub: [https://github.com/simonjacob685-coder](https://github.com/simonjacob685-coder)
 ## 📄 License
 
 MIT License
