@@ -1,0 +1,26 @@
+{
+  "name": "tether-guardian-ai",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "An AI-powered digital security assistant that helps users identify scams, phishing attempts, malicious links, and social engineering attacks before they become victims.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simonjacob685-coder/tether-guardian-ai.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simonjacob685-coder/tether-guardian-ai/issues"
+  },
+  "homepage": "https://github.com/simonjacob685-coder/tether-guardian-ai#readme",
+  "dependencies": {
+    "@tetherto/wdk": "^1.0.0-beta.13",
+    "@tetherto/wdk-wallet-evm": "^1.0.0-beta.15",
+    "lodash": "^4.18.1"
+  }
+}
