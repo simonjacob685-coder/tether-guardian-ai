@@ -11,6 +11,7 @@
 
          import WDK from '@tetherto/wdk';
          import WalletManagerEvm from '@tetherto/wdk-wallet-evm';
+import { loadModel } from "@qvac/sdk";
 
          async function main() {
            console.log('='.repeat(50));
