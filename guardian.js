@@ -1,15 +1,16 @@
 import { analyzeMessage } from "./qvac_analyzer.js";
 
-export async function checkBeforeSending(message, walletAddress) {
-    const aiResult = await analyzeMessage(message);
+export function checkBeforeSending(message, walletAddress) {
+    const result = analyzeMessage(message);
 
     return {
         wallet: walletAddress,
-        verdict: aiResult,
+        verdict: result.verdict,
+        reason: result.reason,
         action:
-            aiResult.includes("HIGH RISK")
+            result.verdict === "HIGH RISK"
                 ? "BLOCK TRANSACTION"
-                : aiResult.includes("SUSPICIOUS")
+                : result.verdict === "SUSPICIOUS"
                 ? "ASK USER TO CONFIRM"
                 : "ALLOW TRANSACTION"
     };

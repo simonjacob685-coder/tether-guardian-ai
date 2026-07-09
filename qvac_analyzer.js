@@ -1,28 +1,37 @@
 /**
- * QVAC Local Analysis Module
- * Tether FanShield AI
+ * FanShield AI Local Analyzer
+ * QVAC-ready architecture
  */
 
-import { loadModel, completion } from "@qvac/sdk";
+export function analyzeMessage(message) {
+    const text = message.toLowerCase();
 
-export async function analyzeMessage(message) {
-  const model = await loadModel("qvac-small");
+    if (
+        text.includes("seed phrase") ||
+        text.includes("private key") ||
+        text.includes("send usdt") ||
+        text.includes("claim reward") ||
+        text.includes("wallet verification")
+    ) {
+        return {
+            verdict: "HIGH RISK",
+            reason: "Possible crypto scam detected."
+        };
+    }
 
-  const prompt = `
-You are a football scam detector.
+    if (
+        text.includes("urgent") ||
+        text.includes("limited time") ||
+        text.includes("click here")
+    ) {
+        return {
+            verdict: "SUSPICIOUS",
+            reason: "Message contains common scam indicators."
+        };
+    }
 
-Classify this message as:
-- SAFE
-- SUSPICIOUS
-- HIGH RISK
-
-Explain why.
-
-Message:
-${message}
-`;
-
-  const result = await completion(model, prompt);
-
-  return result.text;
-} */
+    return {
+        verdict: "SAFE",
+        reason: "No obvious scam indicators detected."
+    };
+}
